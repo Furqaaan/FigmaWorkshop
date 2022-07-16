@@ -2,14 +2,24 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
 }
 
 .heroContainer {
 	background-image: url('../Images/background.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
+	display: table;
+	clear: both;
+	content: "";
+
 }
 
 .navigationLinks {
@@ -17,14 +27,14 @@
 	margin: auto;
 	padding: 20px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 
 .navigationLinks ul {
 	display: flex;
 	list-style-type: none;
-	font-family: 'Inter';
+	font-family: 'Inter',sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -39,3 +49,221 @@
 	color: #18191F;
 }
 
+.heroShowcase {
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-top: 90px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.mainHero {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.heroTitle {
+	display: flex;
+	flex-direction: column;
+	gap: 34px;
+}
+
+.heroTitle h1 {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 72px;
+	line-height: 98px;
+	color: #18191F;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin-top: 10%;
+}
+
+.heroTitle button {
+	background: #8C30F5;
+	border: 0;
+	border-radius: 6px;
+	color: white;
+	width: 154px;
+	height: 48px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.logosHeroSection {
+	display: flex;
+	max-width: 1440px;
+	gap: 64px;
+	padding: 30px;
+	justify-content: center;
+	margin: 15px auto;
+}
+
+.featuresSection {
+	max-width: 1440px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.featuresHeading{
+	text-align: center;
+}
+
+.featuresHeading h2{
+	font-style: normal;
+	font-weight: 800;
+	font-size: 55px;
+	line-height: 64px;
+	width: 560px;
+	height: 64px;
+	margin: 0 auto;
+	color: #18191F;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+.featuresHeading p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	width: 540px;
+	height: 64px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.featuresList1,.featuresList2 {
+	display: flex;
+	padding: 10px;
+	max-width: 1440px;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.featuresItem {
+	height: 148px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px;
+	gap: 24px;
+}
+
+.featuresItem p {
+	width: 350px;
+	text-align: center;
+}
+
+.storiesSection {
+	padding: 20px;
+	background-color: #D5FAFC;;
+}
+
+.storiesRow1 , .storiesRow2 {
+	display: flex;
+	max-width: 1440px;
+	margin: 10px auto;
+	justify-content: center;
+	gap: 40px;
+}
+
+.storiesRow2 {
+	margin-bottom: 100px;
+}
+
+.storiesCards {
+	background-color: white;
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 200px;
+	gap: 25px;
+}
+
+.storiesCards img:not(.storyQuote) {
+	width: 129.58px;
+}
+
+.storyQuote {
+	width: 15px;
+	margin-left: 10px;
+}
+
+#airbnbCard {
+	width: 365px;
+	height: 300px;
+	position: relative;
+	top: 120px;
+	left: -32px;
+}
+
+#hubspotCard {
+	width: 322px;
+	height: 354px;
+}
+
+#bookmyshowCard {
+	width: 300px;
+	height: 255px;
+	position: relative;
+	top: 145px;
+}
+
+.authorPosition {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 24px;
+	color: #969BAB;
+}
+
+.authorName {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	color: #18191F;
+}
+
+.cardsContentWapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.cardsContent {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.cardsFooter {
+	display: flex;
+	flex-direction: column;
+}
+
+.storiesTitle {
+	width: 445px;
+}
+
+.storiesTitle h2 {
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 64px;
+	color: #18191F;
+}
+
+.storiesTitle p {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.titleQuote {
+	width: 140px;
+	position: relative;
+	top: 60px;
+	left: -90px;
+}
